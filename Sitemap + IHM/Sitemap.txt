@@ -1,0 +1,16 @@
+Site Web Restaurant
+│
+├── 1. Pages Publiques / Client
+│   ├── Page d'accueil / Connexion / Inscription
+│   ├── Carte & Menu (Liste des produits)
+│   ├── Mon Panier & Tunnel de commande
+│   │   ├── Option de retrait (Sur place / À emporter)
+│   │   ├── Récapitulatif & Calcul du Total TTC
+│   │   └── Paiement (Carte bancaire)
+│   └── Confirmation & Suivi de commande
+│
+└── 2. Espace Administration (Restaurateur)
+    └── Tableau de bord des commandes (Gestion des commandes)
+        ├── Onglet "En attente" (Accepter / Refuser)
+        ├── Onglet "En préparation" (Marquer comme "Prête" -> Envoi Mail)
+        └── Onglet "Prêtes" (Marquer comme "Retirée")
