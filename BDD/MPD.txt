@@ -1,0 +1,37 @@
+CREATE TABLE utilisateur(
+   idUTIL BIGINT,
+   emailUtil VARCHAR(100),
+   loginUtil VARCHAR(100),
+   mdpUtil VARCHAR(100),
+   PRIMARY KEY(idUTIL)
+);
+
+CREATE TABLE commande(
+   idCOM BIGINT,
+   etatCOM VARCHAR(30),
+   date_horaireCOM DATETIME,
+   valeurTTC DECIMAL(13,3),
+   typeCOM VARCHAR(50),
+   TVA DECIMAL(6,3),
+   idUTIL BIGINT NOT NULL,
+   PRIMARY KEY(idCOM),
+   FOREIGN KEY(idUTIL) REFERENCES utilisateur(idUTIL)
+);
+
+CREATE TABLE produit(
+   idPROD BIGINT,
+   libellePROD VARCHAR(100),
+   prixHT DECIMAL(13,3),
+   PRIMARY KEY(idPROD)
+);
+
+CREATE TABLE ligne_de_commande(
+   idLIGNCOM BIGINT,
+   quantiteProduit BYTE,
+   totalHT DECIMAL(13,3),
+   idCOM BIGINT NOT NULL,
+   idPROD BIGINT NOT NULL,
+   PRIMARY KEY(idLIGNCOM),
+   FOREIGN KEY(idCOM) REFERENCES commande(idCOM),
+   FOREIGN KEY(idPROD) REFERENCES produit(idPROD)
+);
