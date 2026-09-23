@@ -1,1 +1,1 @@
-Mettait vaut fichiers php ici  
+Mettait vaut fichiers php ici  dans un dossier nommer avec le nom des fichier que vous avez passer de statique a dynamique, Merci.
