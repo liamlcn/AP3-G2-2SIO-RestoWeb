@@ -27,7 +27,7 @@ CREATE TABLE produit(
 
 CREATE TABLE ligne_de_commande(
    idLIGNCOM BIGINT,
-   quantiteProduit BYTE,
+   quantiteProduit BIT,
    totalHT DECIMAL(13,3),
    idCOM BIGINT NOT NULL,
    idPROD BIGINT NOT NULL,
