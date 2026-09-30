@@ -1,0 +1,2 @@
+Mettait vaut fichiers php ici, Trigger SQL et autre élément demander dans le lot 4. Merci de les mettre DANS des DOSSIERS comportant leurs.
+Exemple : ficher tigger sql, nom du dossier : Trigger before_ligne_update
