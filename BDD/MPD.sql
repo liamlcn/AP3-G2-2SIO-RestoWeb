@@ -1,3 +1,6 @@
+CREATE DATABASE IF NOT EXISTS apresto;
+USE apresto;
+
 CREATE TABLE utilisateur(
    idUTIL BIGINT,
    emailUtil VARCHAR(100),
