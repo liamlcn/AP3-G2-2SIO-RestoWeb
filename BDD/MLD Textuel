@@ -1,0 +1,4 @@
+UTILISATEUR (#idUTIL, emailUtil, loginUtil, mdpUtil)
+COMMANDE ( #idCOM, etatCOM, date_horaireCOM, valeurTTC, typeCOM, TVA, idUTIL)
+PRODUIT ( #idPROD, libellePROD, prixHT )
+LIGNE_DE_COMMANDE ( #idLIGNCOM, quantiteProduit, totalHT, idCOM, idPROD)
