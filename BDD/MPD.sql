@@ -43,6 +43,7 @@ CREATE TABLE ligne_de_commande(
 
 ALTER TABLE commande            MODIFY idCOM       BIGINT AUTO_INCREMENT;
 ALTER TABLE ligne_de_commande   MODIFY idLIGNCOM   BIGINT AUTO_INCREMENT;
+ALTER TABLE commande MODIFY typeCOM VARCHAR(50);
 
 -- =================================================================================================
 -- =================================================================================================
