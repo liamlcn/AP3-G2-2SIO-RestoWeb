@@ -5,7 +5,7 @@ CREATE TABLE utilisateur(
    idUTIL BIGINT,
    emailUtil VARCHAR(100),
    loginUtil VARCHAR(100),
-   mdpUtil VARCHAR(100),
+   mdpUtil VARCHAR(255),
    PRIMARY KEY(idUTIL)
 );
 
@@ -14,8 +14,8 @@ CREATE TABLE commande(
    etatCOM VARCHAR(30),
    date_horaireCOM DATETIME,
    valeurTTC DECIMAL(13,3),
-   typeCOM VARCHAR(50),
-   TVA DECIMAL(6,3),
+   typeCOM INT,
+   TVA INT,
    idUTIL BIGINT NOT NULL,
    PRIMARY KEY(idCOM),
    FOREIGN KEY(idUTIL) REFERENCES utilisateur(idUTIL)
