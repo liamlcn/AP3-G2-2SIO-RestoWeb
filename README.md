@@ -54,7 +54,7 @@ Le projet est prévu en plusieurs lots. Voici le récapitulatif technique et les
 ---
 
 ## 👥 Auteurs et Contact
-- **Étudiants** : Nouira Selim, 
+- **Étudiants** : Nouira Selim, MENS Diego, LACAN Liam, BEKKADOURI Ibrahim, SANTIAGO Rafael
 - **Encadrants** : Christophe PUEL, Jean-François RAMIARA  
 - **Établissement** : Institut LIMAYRAC  
 - **Formation** : BTS SIO 2ème année – Option SLAM  
