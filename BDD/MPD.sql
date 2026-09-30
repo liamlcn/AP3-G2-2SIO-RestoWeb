@@ -1,3 +1,5 @@
+-- Création --
+
 CREATE DATABASE IF NOT EXISTS apresto;
 USE apresto;
 
@@ -38,3 +40,23 @@ CREATE TABLE ligne_de_commande(
    FOREIGN KEY(idCOM) REFERENCES commande(idCOM),
    FOREIGN KEY(idPROD) REFERENCES produit(idPROD)
 );
+
+-- =================================================================================================
+-- =================================================================================================
+-- Remplissage --
+
+INSERT INTO `produit`(`libellePROD`, `prixHT`)
+VALUES ('Pizza 5 fromages','13'),
+('Tacos 3 viandes','11'),
+('Poulet roti (2kg)','20'),
+('Nouiles sautées','10'),
+('Sachet de frites','6'),
+('Salade César','10'),
+('Magret de canard','20'),
+('Foie gras (pot)','8'),
+('Coeurs de canards (0,5kg)','7'),
+('Pizza Margerita','10'),
+
+('Eau plate (bouteille 33cl)','4'),
+('Coca Cola (canette 33cl)','4'),
+('Perrier (bouteille 0,5L)','5')
