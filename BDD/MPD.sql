@@ -12,11 +12,11 @@ CREATE TABLE utilisateur(
 );
 
 CREATE TABLE commande(
-   idCOM BIGINT AUTO_INCREMENT,
+   idCOM       BIGINT AUTO_INCREMENT,
    etatCOM VARCHAR(30),
    date_horaireCOM DATETIME,
    valeurTTC DECIMAL(13,3),
-   typeCOM TINYINT UNSIGNED,
+   typeCOM VARCHAR(50),
    TVA TINYINT UNSIGNED,
    idUTIL BIGINT NOT NULL,
    PRIMARY KEY(idCOM),
@@ -31,7 +31,7 @@ CREATE TABLE produit(
 );
 
 CREATE TABLE ligne_de_commande(
-   idLIGNCOM BIGINT AUTO_INCREMENT,
+   idLIGNCOM   BIGINT AUTO_INCREMENT,
    quantiteProduit INT,
    totalHT DECIMAL(13,3),
    idCOM BIGINT NOT NULL,
@@ -41,9 +41,8 @@ CREATE TABLE ligne_de_commande(
    FOREIGN KEY(idPROD) REFERENCES produit(idPROD)
 );
 
-ALTER TABLE commande            MODIFY idCOM       BIGINT AUTO_INCREMENT;
-ALTER TABLE ligne_de_commande   MODIFY idLIGNCOM   BIGINT AUTO_INCREMENT;
-ALTER TABLE commande MODIFY typeCOM VARCHAR(50);
+--ALTER TABLE commande            MODIFY idCOM       BIGINT AUTO_INCREMENT;
+--ALTER TABLE ligne_de_commande   MODIFY idLIGNCOM   BIGINT AUTO_INCREMENT;
 
 -- =================================================================================================
 -- =================================================================================================
