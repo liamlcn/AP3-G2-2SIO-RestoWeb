@@ -1,0 +1,37 @@
+[
+    {
+        "id_commande": 101,
+        "date_heure": "2026-10-14 13:45:00",
+        "montant_ttc": 176.00,
+        "tva": 0.10,
+        "mode": "Manger sur place",
+        "client": "Jean Dupont",
+        "produits": [
+            {
+                "libelle": "Magret de canard",
+                "quantite": 8,
+                "total_ht": 160.00
+            }
+        ]
+    },
+    {
+        "id_commande": 102,
+        "date_heure": "2026-10-14 13:52:00",
+        "montant_ttc": 46.11,
+        "tva": 0.055,
+        "mode": "À emporter",
+        "client": "Marina Dubois",
+        "produits": [
+            {
+                "libelle": "Pizza 5 fromages",
+                "quantite": 2,
+                "total_ht": 26.00
+            },
+            {
+                "libelle": "Sachet de frites",
+                "quantite": 3,
+                "total_ht": 18.00
+            }
+        ]
+    }
+]
