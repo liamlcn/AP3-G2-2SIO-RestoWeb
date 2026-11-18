@@ -9,7 +9,7 @@ Cette API permet à **RestoSwing** (application graphique Java utilisée en cuis
 - La liaison est considérée comme sécurisée : **aucune authentification** n'est mise en œuvre sur ces endpoints.
 - **Aucun message d'erreur n'est renvoyé par le serveur** en cas de problème (erreur silencieuse) : une requête invalide ou une erreur interne se traduit par une réponse vide ou neutre (tableau vide, ou simplement aucune action), jamais par un message d'erreur visible.
 
-Base URL : `http://<mon application restoweb>/api/`
+Base URL : `http://<mon application restoweb>/restoswing/`
 
 ## Cycle de vie d'une commande (colonne `etatCOM`)
 
@@ -34,7 +34,7 @@ en_attente  --accepter-->  en_preparation  --terminer-->  prete
 ## 1. Liste des commandes en attente
 
 ```
-GET /api/commandes_en_attente.php
+GET /restoswing/commandes_en_attente.php
 ```
 
 Retourne toutes les commandes dont `etatCOM = 'en_attente'`, triées par date croissante (les plus anciennes en premier).
@@ -77,7 +77,7 @@ S'il n'y a aucune commande en attente, la réponse est un tableau JSON vide : `[
 ## 2. Accepter une commande
 
 ```
-GET /api/commande_accepter.php?id_commande=XX
+GET /restoswing/commande_accepter.php?id_commande=XX
 ```
 
 Fait passer la commande `XX` de l'état `en_attente` à `en_preparation`. Si la commande n'existe pas, n'est pas dans l'état `en_attente`, ou si `id_commande` est absent/invalide, la requête n'a aucun effet (pas de message d'erreur).
@@ -89,7 +89,7 @@ Fait passer la commande `XX` de l'état `en_attente` à `en_preparation`. Si la 
 ## 3. Refuser une commande
 
 ```
-GET /api/commande_refuser.php?id_commande=XX
+GET /restoswing/commande_refuser.php?id_commande=XX
 ```
 
 Fait passer la commande `XX` à l'état `abandonnee` (manque d'ingrédient, surcharge de travail, panne, fermeture...). Autorisé depuis `en_attente` ou `en_preparation`. Mêmes conditions d'échec silencieux que ci-dessus.
