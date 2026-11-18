@@ -59,7 +59,20 @@ VALUES ('Pizza 5 fromages','13'),
 ('Foie gras (pot)','8'),
 ('Coeurs de canards (0,5kg)','7'),
 ('Pizza Margerita','10'),
-
 ('Eau plate (bouteille 33cl)','4'),
 ('Coca Cola (canette 33cl)','4'),
-('Perrier (bouteille 0,5L)','5')
+('Perrier (bouteille 0,5L)','5');
+
+
+INSERT INTO `utilisateur` (`idUTIL`, `emailUtil`, `loginUtil`, `mdpUtil`) VALUES
+(1, 'test.test@test.test', 'test test', '$2y$10$ENyMAlql1ixrosKtA8bVLuIx7gcAPT9cgXqV48jOT628.BsPONbRK'),
+(2, 'admin@foodexpress.fr', 'admin foodexpress', '$2y$10$o4x9W1nXqUJB1lV6.95qN.cTpadK5CBMy871EpgYPtLWwvs6YMyHe'),
+(3, 'jean.dupont@email.com', 'jean dupont', '$2y$10$e1JyP.H6QA6cb/LK./4JVO90jBC12LdfwaY4R.Fot9JAOIH8iqUWi'),
+(4, 'marie.cerise@email.com', 'marie cerise', '$2y$10$3Ov2kB.1CkvnUlVPucD2KelSgdtS43dzwm6pZlooiM/zSdVohGwIy'),
+(5, 'paul.martin@email.com', 'paul martin', '$2y$10$R84WUwEJf3omzmZaMATgOeGiXKYzl9ChFHTLJ2GK.JVZCIDNYxyQS'),
+(6, 'sophie.bernard@email.com', 'sophie bernard', '$2y$10$kY9o7kqBvmhlXeaUQLzrjO.asLmvOR5k1UvjUZW79MIVoqLLMcq7O'),
+(7, 'lucas.petit@email.com', 'lucas petit', '$2y$10$Qx0yNUa6xrEEv9QP5XKWdu/sLoi5Pe11FBxkExSiZzTzbZlE1Bdqi'),
+(8, 'emma.robert@email.com', 'emma robert', '$2y$10$iTpXeRQmftoVzcGX5ZfWeuHr21it0KeQM0SBaC1YDWbnbbZL64CGC'),
+(9, 'thomas.richard@email.com', 'thomas richard', '$2y$10$bugfME.vsoO3EwcwN9xXR.UCmOJOSuyuOVAda1iUH3R7.lHQDTKN6'),
+(10, 'chloe.durand@email.com', 'chloe durand', '$2y$10$VHvv6w16Canta/rZ4INCXup3VowGilN5cwIBgskS1KSK83uAHehf6'),
+(11, 'hugo.moreau@email.com', 'hugo moreau', '$2y$10$bhUM2FYtLbf8O455TXv/ZelKtDLXEDt32odNuuyl8JPLQkWrTJc.i');
