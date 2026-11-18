@@ -209,7 +209,6 @@ Boissons : Eau plate 33 cl (4 €), Coca-Cola 33 cl (4 €), Perrier 0,5 L (5 �
 Le registre complet (ANO-01 à ANO-10) est dans [`Manuels/MANUEL_TEST.md`](./Manuels/MANUEL_TEST.md). Les principales :
 
 - **ANO-01** : `commande.TVA` est un `TINYINT` mais `panier.php` y écrit `0.10` / `0.055` (valeur stockée : 0).
-- **ANO-04** : `pages/confirmation.php` utilise d'anciens états (`acceptee`, `refusee`) ; la version à jour est `restoswing/confirmation.php`.
 - **ANO-05** : message SQL brut affiché en cas d'erreur dans `panier.php`.
 - **ANO-07** : `db.php` peut renvoyer un message d'erreur à RestoSwing si la base est injoignable.
 
