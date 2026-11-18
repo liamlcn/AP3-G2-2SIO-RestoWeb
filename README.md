@@ -53,6 +53,40 @@ Le projet est prévu en plusieurs lots. Voici le récapitulatif technique et les
 
 ---
 
+Arborescence du projet :
+
+  index.php (page d'accueil)
+  
+  bdd /
+      MPD.sql (script de génération et de peuplement de la base de données)
+      all trigger.sql (ensemble des triggers implentés dans la base de données)
+      secour /
+          apresto(secour).sql (fichier de secours)
+          
+  css /
+      maincss.css (fichier css pour le style des pages)
+      
+  function_db /
+      db.php (connexion à la base de données)
+  
+  pages /
+      confirmation.php (résumé de la commande + état de la commande)
+      connexion.php
+      deconnexion.php
+      inscription.php
+      menu.php (liste de la nourriture et des boissons vendues)
+      panier.php (récapitulatif du contenu de la commande + payer la commande)
+  
+  restoswing /
+      commande_accepter.php (acceptation de la commande par le restaurateur)
+      commande_refuser.php (refus de la commande par le restaurateur)
+      commande_terminer.php (commande prête, envoie d'une notification au client)
+      commandes_en_attente.php (liste des commandes reçues et non traitées)
+      confirmation.php (statut des commandes depuis le point de vue du client)
+      exemple_commande.json (fichier de test)
+
+---
+
 ## 👥 Auteurs et Contact
 - **Étudiants** : LACAN Liam, MENS Diego, BEKKADOURI Ibrahim, SANTIAGO Rafael
 - **Encadrants** : Christophe PUEL, Jean-François RAMIARA  
