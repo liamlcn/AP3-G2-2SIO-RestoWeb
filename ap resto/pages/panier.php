@@ -134,10 +134,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             header("Location: confirmation.php?id=" . $idCommande);
             exit;
         } catch (Exception $e) {
-            $pdo->rollBack();
-            // --- DEBUG TEMPORAIRE : affiche le vrai message d'erreur, à retirer une fois corrigé ---
-            $erreurs[] = "Erreur technique : " . $e->getMessage();
-            // -----------------------------------------------------------------------------------
+            if ($pdo->inTransaction()) {
+                $pdo->rollBack();
+            }
+            error_log("Erreur enregistrement commande : " . $e->getMessage());
+            $erreurs[] = "Une erreur est survenue lors de l'enregistrement de la commande.";
         }
     }
 }
