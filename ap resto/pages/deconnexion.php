@@ -9,7 +9,7 @@ session_destroy();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Redirection automatique vers main.php après 3 secondes -->
-    <meta http-equiv="refresh" content="3;url=main.php">
+    <meta http-equiv="refresh" content="3;url=index.php">
     <title>Déconnexion - Food Express</title>
     <link rel="stylesheet" href="../css/maincss.css">
 </head>
