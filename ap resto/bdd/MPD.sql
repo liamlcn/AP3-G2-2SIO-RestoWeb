@@ -41,6 +41,8 @@ CREATE TABLE ligne_de_commande(
    FOREIGN KEY(idPROD) REFERENCES produit(idPROD)
 );
 
+ALTER TABLE commande MODIFY TVA DECIMAL(5,2);
+
 --ALTER TABLE commande            MODIFY idCOM       BIGINT AUTO_INCREMENT;
 --ALTER TABLE ligne_de_commande   MODIFY idLIGNCOM   BIGINT AUTO_INCREMENT;
 
