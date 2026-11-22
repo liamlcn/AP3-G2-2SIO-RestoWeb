@@ -49,7 +49,7 @@ $nbArticles = isset($_SESSION['panier']) ? array_sum($_SESSION['panier']) : 0;
         <header>
             <div class="logo">🍔 Food Express</div>
             <div class="user-info">
-                <span>Bienvenue, <strong>M le prof</strong></span>
+                <span><?php echo $_SESSION['loginUtil'] ?></span>
 
                 <a href="../main.php" class="btn btn-red">Se déconnecter</a>
             </div>
