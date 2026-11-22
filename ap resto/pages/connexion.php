@@ -44,7 +44,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     <header>
         <div class="logo">🍔 Food Express</div>
-        <a href="../main.php" class="btn btn-outline">← Accueil</a>
+        <a href="../index.php" class="btn btn-outline">← Accueil</a>
     </header>
 
     <div class="container">
