@@ -22,7 +22,7 @@
 6. [Fiche de recette](#6-fiche-de-recette)
 7. [Registre des anomalies connues](#7-registre-des-anomalies-connues)
 8. [Annexes](#8-annexes)
-9. [User]Liste des utilisateurs et MDP(#9-Users-et-MDP)
+9. [Liste des utilisateurs et MDP](#9-users-et-mdp)
 
 ---
 
