@@ -3,7 +3,7 @@
         "id_commande": 101,
         "date_heure": "2026-10-14 13:45:00",
         "montant_ttc": 176.00,
-        "tva": 0.10,
+        "tva": 10.0,
         "mode": "Manger sur place",
         "client": "Jean Dupont",
         "produits": [
@@ -17,8 +17,8 @@
     {
         "id_commande": 102,
         "date_heure": "2026-10-14 13:52:00",
-        "montant_ttc": 46.11,
-        "tva": 0.055,
+        "montant_ttc": 46.42,
+        "tva": 5.5,
         "mode": "À emporter",
         "client": "Marina Dubois",
         "produits": [
