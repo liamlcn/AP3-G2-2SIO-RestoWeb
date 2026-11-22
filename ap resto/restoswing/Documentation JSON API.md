@@ -101,7 +101,7 @@ Fait passer la commande `XX` à l'état `abandonnee` (manque d'ingrédient, surc
 ## 4. Terminer une commande
 
 ```
-GET /api/commande_terminer.php?id_commande=XX
+GET /restoswing/commande_terminer.php?id_commande=XX
 ```
 
 Fait passer la commande `XX` de l'état `en_preparation` à `prete`. Mêmes conditions d'échec silencieux que ci-dessus.
