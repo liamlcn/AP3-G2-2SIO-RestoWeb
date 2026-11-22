@@ -18,8 +18,8 @@ $totalHT = 0.0;
 
 // Taux de TVA restauration en France : 10% sur place, 5,5% à emporter
 $tauxTVAParMode = [
-    'place'    => 0.10,
-    'emporter' => 0.055,
+    'place'    => 10.0,
+    'emporter' => 5.50,
 ];
 
 if (!empty($panier)) {
