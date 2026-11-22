@@ -22,6 +22,7 @@
 6. [Fiche de recette](#6-fiche-de-recette)
 7. [Registre des anomalies connues](#7-registre-des-anomalies-connues)
 8. [Annexes](#8-annexes)
+9. [User]Liste des utilisateurs et MDP(#9-Users-et-MDP)
 
 ---
 
@@ -350,3 +351,23 @@ curl -i "$BASE/commande_terminer.php?id_commande=1"
 ```
 
 Sous PowerShell : remplacer `curl` par `curl.exe` et `BASE=…` par `$BASE = "http://localhost/apresto/restoswing"` (puis `$BASE/…` dans les URL entre guillemets).
+
+---
+
+## 9. Users et MDP
+
+
+| Utilisateurs | Mot de Passe |
+|---|---|
+| admin foodexpress | adm1234 |
+| jean dupont | mdp1234 |
+| marie cerise | mdp1234 |
+| paul martin | mdp1234 |
+| sophie bernard | mdp1234 |
+| lucas petit | mdp1234 |
+| emma robert | mdp1234 |
+| thomas richard | mdp1234 |
+| chloe durand | mdp1234 |
+| hugo moreau | mdp1234 |
+
+---
