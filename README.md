@@ -22,8 +22,8 @@ Le script `MPD.sql` ne crée **aucun compte** : les utilisateurs s'inscrivent vi
 
 | Source | Login | E-mail | Mot de passe |
 |--------|-------|--------|--------------|
-| Export de secours (`bdd/secour/apresto(secour).sql`) | `test test` | `test.test@test.test` | `<à compléter>` |
-| Compte de recette (cf. `Manuels/MANUEL_TEST.md`, à créer par inscription) | `Alice Martin` | `alice.martin@test.local` | `Test1234` |
+| Export de secours (`bdd/secour/apresto(secour).sql`) | `test test` | `test.test@test.test` | `oublier` |
+| Liste complète (cf. `Manuels/MANUEL_TEST.md`, à créer par inscription) | `admin foodexpress` | `admin@foodexpress.fr` | `adm1234` |
 
 La connexion se fait avec l'**e-mail** (recommandé) ou le login (« Prénom Nom »).
 Il n'existe pas de compte restaurateur : l'API utilisée par RestoSwing n'a **pas d'authentification** (cahier des charges).
